@@ -1,0 +1,27 @@
+:root {
+	--text-color: #1e1e1e;
+	--text-muted: #8d8d8d;
+	--text-card-darkblue: #0d1b39;
+	--accent: #e58411;
+
+	--header-text-color: #fff;
+
+	--footer-bg: #2D2F33;
+	--footer-accent: #f6973f;
+	--footer-texColor: rgb(255, 255, 255, 0.8);
+
+	--ui-orange: #e58411;
+	--ui-biruza: #00d6c9;
+	--ui-gray: #7c7c7c;
+	--ui-darkblue: #0d1b39;
+
+	--font-main: 'Gilroy', sans-serif;
+	--font-cards: 'Inter', sans-serif;
+	--font-footer-accent: 'DM Sans', sans-serif;
+}
+
+@mixin retina-bg($image) {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: $image;
+	}
+}

@@ -1,0 +1,81 @@
+.header {
+	position: relative;
+	background-image: url('./../img/header/header-bg.jpg');
+	background-color: var(--footer-bg);
+	background-size: cover;
+	aspect-ratio: 1440 / 1084;
+	padding-top: 40px;
+
+	color: var(--header-text-color);
+
+	@include retina-bg(url('./../img/header/header-bgx2.jpg'));
+
+	a {
+		color: var(--header-text-color);
+	}
+
+	@mixin retina-bg($image) {
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			background-image: $image;
+		}
+	}
+}
+
+.header__nav {
+	margin-bottom: 86px;
+}
+
+.header__title {
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	text-transform: capitalize;
+	margin-bottom: 14px;
+}
+
+.header__content {
+	text-align: center;
+}
+
+.header__content p {
+	max-width: 606px;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 160%;
+	opacity: 0.8;
+}
+
+.header__search {
+	margin: 45px auto 0;
+}
+
+/* Dots */
+
+.header__dot-sofa {
+	position: absolute;
+	left: calc(296 * 100% / 1440);
+	top: calc(685 * 100% / 1084);
+	// transform: translate(-50%, -50%);
+}
+
+.header__dot-vase {
+	position: absolute;
+	left: calc(114 * 100% / 1410);
+	top: calc(754 * 100% / 1075);
+	transform: translate(-50%, -50%);
+}
+
+.header__dot-item {
+	position: absolute;
+	left: calc(810 * 100% / 1440);
+	top: calc(787 * 100% / 1084);
+	transform: translate(-50%, -50%);
+}
+
+.header__dot-wall {
+	position: absolute;
+	right: calc(46 * 100% / 1440);
+	top: calc(821 * 100% / 1084);
+	// transform: translate(-50%, -50%);
+}
