@@ -219,6 +219,44 @@ html, body {
   font-size: 18px;
 }
 
+.nav-list__item {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav-list__link {
+  transition: 0.1s ease-in;
+}
+.nav-list__link:hover {
+  opacity: 0.7;
+}
+.nav-list__link--dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list__link--dropdown::after {
+  content: url("./../img/icons/down.svg");
+  height: 18px;
+}
+
+.nav-list__sub-nav {
+  opacity: 0;
+  width: 160px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0, 10%);
+  transition: 0.2s ease-in;
+}
+
+.nav-list__item:hover .nav-list__sub-nav {
+  pointer-events: all;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .cart {
   justify-self: end;
   align-self: center;
@@ -476,7 +514,10 @@ html, body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .tab-controls__btn--active {
-  background: #fff;
+  background-color: #fff;
+}
+.tab-controls__btn--active:hover {
+  background-color: #fff;
 }
 
 .card {
@@ -674,4 +715,21 @@ html, body {
   letter-spacing: 0.28px;
   text-transform: capitalize;
   color: #fff !important;
+}
+
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  background-color: var(--footer-bg);
+  padding: 16px 25px;
+  border-radius: 10px;
+  color: var(--footer-texColor);
+  font-size: 16px;
+}
+.sub-nav a {
+  color: var(--footer-texColor);
+  transition: 0.1s ease-in;
+}
+.sub-nav a:hover {
+  color: var(--accent);
 }/*# sourceMappingURL=main.css.map */

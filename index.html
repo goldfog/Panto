@@ -19,7 +19,23 @@
 					</div>
 					<ul class="nav-list">
 						<li class="nav-list__item">
-							<a class="nav-list__link" href="#!">Furniture</a>
+							<a class="nav-list__link nav-list__link--dropdown" href="#!">Furniture</a>
+							<div class="nav-list__sub-nav">
+								<ul class="sub-nav">
+									<li class="sub-nav__item">
+										<a class="sub-nav__link" href="!#">Home</a>
+									</li>
+									<li class="sub-nav__item">
+										<a class="sub-nav__link" href="!#">Services</a>
+									</li>
+									<li class="sub-nav__item">
+										<a class="sub-nav__link" href="!#">Products</a>
+									</li>
+									<li class="sub-nav__item">
+										<a class="sub-nav__link" href="!#">Contacts</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li class="nav-list__item">
 							<a class="nav-list__link" href="#!">Shop</a>
@@ -179,7 +195,7 @@
 			</div>
 		</header>
 
-		<section class="benefits">
+		<section class="benefits none">
 			<div class="container">
 				<div class="benefits__grid">
 					<h2 class="benefits__title">Why Choosing Us</h2>
@@ -211,17 +227,16 @@
 			</div>
 		</section>
 
-		<section class="products">
+		<section class="products none">
 			<div class="container">
 				<h2 class="products__title">Best Selling Product</h2>
 				<div class="products__tabs">
 					<div class="tab-controls">
-						<button class="tab-controls__btn tab-controls__btn--active">
-							Chair
-						</button>
-						<button class="tab-controls__btn">Beds</button>
-						<button class="tab-controls__btn">Sofa</button>
-						<button class="tab-controls__btn">Lamp</button>
+						<button data-tab="all" class="tab-controls__btn tab-controls__btn--active">All</button>
+						<button data-tab="chair" class="tab-controls__btn">Chair</button>
+						<button data-tab="beds" class="tab-controls__btn">Beds</button>
+						<button data-tab="sofa" class="tab-controls__btn">Sofa</button>
+						<button data-tab="lamp" class="tab-controls__btn">Lamp</button>
 					</div>
 				</div>
 
@@ -232,7 +247,7 @@
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
-								<article class="card swiper-slide">
+								<article data-tab-value="chair" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -260,7 +275,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="chair" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -288,7 +303,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="bads" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -316,7 +331,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="sofa" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -344,7 +359,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="lamp" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -372,7 +387,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="chair" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -400,7 +415,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="beds" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -428,7 +443,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="sofa" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -456,7 +471,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="chair" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -484,7 +499,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="lamp" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -512,7 +527,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="chair" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -540,7 +555,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="bads" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -568,7 +583,7 @@
 										</div>
 									</div>
 								</article>
-								<article class="card swiper-slide">
+								<article data-tab-value="sofa" class="card swiper-slide">
 									<a class="card__link" href="#product-page"></a>
 									<div class="card__photo">
 										<img
@@ -612,7 +627,7 @@
 			</div>
 		</section>
 
-		<footer class="footer">
+		<footer class="footer none">
 			<div class="container container--small">
 				<div class="footer__grid">
 					<div class="footer__descr">
@@ -654,7 +669,6 @@
 							</li>
 						</ul>
 					</nav>
-
 				</div>
 				<div class="footer__row">
 					<div class="footer__copyright">Copyright © 2024</div>

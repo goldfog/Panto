@@ -29,8 +29,8 @@ for (let hint of infoHints) {
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 4,
 	spaceBetween: 42,
-	freeMode: true,
-	loop: true,
+	// freeMode: true,
+	// loop: true,
 
 	navigation: {
 		nextEl: '#sliderNext',
@@ -52,3 +52,39 @@ const swiper = new Swiper('.swiper', {
 	// 	},
 	// },
 });
+
+// Tabs
+
+const tabsBtns = document.querySelectorAll('[data-tab]');
+const tabsProducts = document.querySelectorAll('[data-tab-value]');
+
+for (let btn of tabsBtns) {
+	btn.addEventListener('click', function () {
+		// Убераем активные классы у всех кнопок
+		for (let btn of tabsBtns) {
+			btn.classList.remove('tab-controls__btn--active');
+		}
+
+		// Добавляем активный класс к активной кнопке
+		this.classList.add('tab-controls__btn--active');
+
+		// Отобразить нужные товары и скрыть все товары
+
+		for (let product of tabsProducts) {
+			// Проверка на отображение всех слайдов
+
+			if (this.dataset.tab === 'all') {
+				product.classList.remove('none');
+			} else {
+				if (product.dataset.tabValue === this.dataset.tab) {
+					product.classList.remove('none');
+				} else {
+					product.classList.add('none');
+				}
+			}
+		}
+
+		// Update swiper
+		swiper.update();
+	});
+}
