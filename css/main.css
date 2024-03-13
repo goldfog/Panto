@@ -208,6 +208,15 @@ html, body {
   align-self: center;
 }
 
+.nav__btn {
+  display: none;
+}
+@media (max-width: 992px) {
+  .nav__btn {
+    display: block;
+  }
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -217,6 +226,11 @@ html, body {
   justify-self: center;
   font-weight: 500;
   font-size: 18px;
+}
+@media (max-width: 992px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__item {
