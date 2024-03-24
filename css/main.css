@@ -108,6 +108,7 @@ legend {
 html, body {
   font-family: var(--font-main);
   color: var(--text-color);
+  position: relative;
 }
 
 .container {
@@ -125,7 +126,6 @@ html, body {
 }
 
 .header {
-  position: relative;
   background-image: url("./../img/header/header-bg.jpg");
   background-color: var(--footer-bg);
   background-size: cover;
@@ -196,6 +196,14 @@ html, body {
   position: absolute;
   right: 3.1944444444%;
   top: 75.7380073801%;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+  color: #fff !important;
 }
 
 .nav {
@@ -269,6 +277,23 @@ html, body {
   pointer-events: all;
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  background-color: var(--footer-bg);
+  padding: 16px 25px;
+  border-radius: 10px;
+  color: var(--footer-texColor);
+  font-size: 16px;
+}
+.sub-nav a {
+  color: var(--footer-texColor);
+  transition: 0.1s ease-in;
+}
+.sub-nav a:hover {
+  color: var(--accent);
 }
 
 .cart {
@@ -723,27 +748,52 @@ html, body {
   gap: 40px;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.28px;
-  text-transform: capitalize;
-  color: #fff !important;
+.mobile-nav-wrapper {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  background-color: var(--footer-bg);
+  padding: 30px 30px;
+  color: var(--footer-texColor);
+}
+.mobile-nav-wrapper--open {
+  display: block;
 }
 
-.sub-nav {
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.mobile-cart {
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-grow: 1;
+  padding-right: 20px;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+/* Nav */
+.mobile-nav {
   display: grid;
-  gap: 16px;
-  background-color: var(--footer-bg);
-  padding: 16px 25px;
-  border-radius: 10px;
-  color: var(--footer-texColor);
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* SubNav */
+.mobile-sub-nav {
+  padding: 20px 0 0 20px;
+  display: grid;
+  gap: 14px;
   font-size: 16px;
-}
-.sub-nav a {
-  color: var(--footer-texColor);
-  transition: 0.1s ease-in;
-}
-.sub-nav a:hover {
-  color: var(--accent);
 }/*# sourceMappingURL=main.css.map */

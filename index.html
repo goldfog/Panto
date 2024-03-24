@@ -55,12 +55,12 @@
 						<div class="cart__count">0</div>
 					</a>
 
-					<button class="nav__btn">
+					<button id="open-mobile-nav-btn" class="nav__btn">
 						<img src="./img/icons/mobile-nav.svg" alt="Open navigation" />
 					</button>
 				</nav>
 
-				<div class="header__content none">
+				<div class="header__content">
 					<h1 class="header__title">
 						Make your interior more minimalistic & modern
 					</h1>
@@ -83,7 +83,7 @@
 					</form>
 				</div>
 
-				<div class="header__dot-sofa none">
+				<div class="header__dot-sofa">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -112,7 +112,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-vase none">
+				<div class="header__dot-vase">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -141,7 +141,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-item none">
+				<div class="header__dot-item">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-wall none">
+				<div class="header__dot-wall">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -199,37 +199,52 @@
 					</div>
 				</div>
 			</div>
+			<div id="mobile-nav" class="mobile-nav-wrapper">
+				<div class="mobile-nav-header">
+					<a class="mobile-cart" href="!#">
+						<div class="cart">
+							<img class="cart__img" src="./img/icons/cart.svg" alt="" />
+							<div class="cart__count">0</div>
+						</div>
+						Cart
+					</a>
 
-			<ul class="mobile-nav">
-				<li class="mobile-nav__item">
-					<a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
-						>Furniture</a
-					>
-					<ul class="mobile-sub-nav">
-						<li class="mobile-sub-nav__item">
-							<a class="mobile-sub-nav__link" href="!#">Home</a>
-						</li>
-						<li class="mobile-sub-nav__item">
-							<a class="mobile-sub-nav__link" href="!#">Services</a>
-						</li>
-						<li class="mobile-sub-nav__item">
-							<a class="mobile-sub-nav__link" href="!#">Products</a>
-						</li>
-						<li class="mobile-sub-nav__item">
-							<a class="mobile-sub-nav__link" href="!#">Contacts</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mobile-nav__item">
-					<a class="mobile-nav__link" href="#!">Shop</a>
-				</li>
-				<li class="mobile-nav__item">
-					<a class="mobile-nav__link" href="#!">About Us</a>
-				</li>
-				<li class="mobile-nav__item">
-					<a class="mobile-nav__link" href="#!">Contact Us</a>
-				</li>
-			</ul>
+					<button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+						<img src="./img/icons/close.svg" alt="close" />
+					</button>
+				</div>
+
+				<ul class="mobile-nav">
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
+							>Furniture</a
+						>
+						<ul class="mobile-sub-nav">
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="!#">Home</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="!#">Services</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="!#">Products</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="!#">Contacts</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link" href="#!">Shop</a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link" href="#!">About Us</a>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link" href="#!">Contact Us</a>
+					</li>
+				</ul>
+			</div>
 		</header>
 
 		<section class="benefits none">
