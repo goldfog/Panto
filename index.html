@@ -11,7 +11,7 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header none">
 			<div class="container">
 				<nav class="header__nav nav">
 					<div class="nav__logo">
@@ -68,22 +68,24 @@
 						Turn your room with panto into a lot more minimalist and modern with
 						ease and speed
 					</p>
-					<form class="header__search search__form" action="">
-						<input
-							class="search__form-input"
-							type="text"
-							name=""
-							id=""
-							placeholder="Search furniture"
-							autocomplete="off"
-						/>
-						<button class="search__form-btn">
-							<img src="./img/icons/search.svg" alt="search" />
-						</button>
-					</form>
+					<div class="header__search">
+						<form class="search__form" action="">
+							<input
+								class="search__form-input"
+								type="text"
+								name=""
+								id=""
+								placeholder="Search furniture"
+								autocomplete="off"
+							/>
+							<button class="search__form-btn">
+								<img src="./img/icons/search.svg" alt="search" />
+							</button>
+						</form>
+					</div>
 				</div>
 
-				<div class="header__dot-sofa">
+				<div class="header__dot header__dot--sofa">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -112,7 +114,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-vase">
+				<div class="header__dot header__dot--vase">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -141,7 +143,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-item">
+				<div class="header__dot header__dot--item">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -170,7 +172,7 @@
 					</div>
 				</div>
 
-				<div class="header__dot-wall">
+				<div class="header__dot header__dot--wall">
 					<button class="info-dot">
 						<div class="info-dot__circle"></div>
 						<div class="info-dot__radius"></div>
@@ -198,54 +200,56 @@
 						</label>
 					</div>
 				</div>
-			</div>
-			<div id="mobile-nav" class="mobile-nav-wrapper">
-				<div class="mobile-nav-header">
-					<a class="mobile-cart" href="!#">
-						<div class="cart">
-							<img class="cart__img" src="./img/icons/cart.svg" alt="" />
-							<div class="cart__count">0</div>
-						</div>
-						Cart
-					</a>
-
-					<button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
-						<img src="./img/icons/close.svg" alt="close" />
-					</button>
-				</div>
-
-				<ul class="mobile-nav">
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
-							>Furniture</a
-						>
-						<ul class="mobile-sub-nav">
-							<li class="mobile-sub-nav__item">
-								<a class="mobile-sub-nav__link" href="!#">Home</a>
-							</li>
-							<li class="mobile-sub-nav__item">
-								<a class="mobile-sub-nav__link" href="!#">Services</a>
-							</li>
-							<li class="mobile-sub-nav__item">
-								<a class="mobile-sub-nav__link" href="!#">Products</a>
-							</li>
-							<li class="mobile-sub-nav__item">
-								<a class="mobile-sub-nav__link" href="!#">Contacts</a>
-							</li>
-						</ul>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="#!">Shop</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="#!">About Us</a>
-					</li>
-					<li class="mobile-nav__item">
-						<a class="mobile-nav__link" href="#!">Contact Us</a>
-					</li>
-				</ul>
 			</div>
 		</header>
+
+		<!-- Mobile nav -->
+		<div id="mobile-nav" class="mobile-nav-wrapper">
+			<div class="mobile-nav-header">
+				<a class="mobile-cart" href="!#">
+					<div class="cart">
+						<img class="cart__img" src="./img/icons/cart.svg" alt="" />
+						<div class="cart__count">0</div>
+					</div>
+					Cart
+				</a>
+
+				<button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+					<img src="./img/icons/close.svg" alt="close" />
+				</button>
+			</div>
+
+			<ul class="mobile-nav">
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link mobile-nav__link--dropdown" href="#!"
+						>Furniture</a
+					>
+					<ul class="mobile-sub-nav">
+						<li class="mobile-sub-nav__item">
+							<a class="mobile-sub-nav__link" href="!#">Home</a>
+						</li>
+						<li class="mobile-sub-nav__item">
+							<a class="mobile-sub-nav__link" href="!#">Services</a>
+						</li>
+						<li class="mobile-sub-nav__item">
+							<a class="mobile-sub-nav__link" href="!#">Products</a>
+						</li>
+						<li class="mobile-sub-nav__item">
+							<a class="mobile-sub-nav__link" href="!#">Contacts</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#!">Shop</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#!">About Us</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a class="mobile-nav__link" href="#!">Contact Us</a>
+				</li>
+			</ul>
+		</div>
 
 		<section class="benefits none">
 			<div class="container">
@@ -279,7 +283,7 @@
 			</div>
 		</section>
 
-		<section class="products none">
+		<section class="products">
 			<div class="container">
 				<h2 class="products__title">Best Selling Product</h2>
 				<div class="products__tabs">

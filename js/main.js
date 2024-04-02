@@ -6,6 +6,11 @@ const infoHints = document.querySelectorAll('.info-hint');
 for (let btn of infoBtns) {
 	btn.addEventListener('click', function (e) {
 		e.stopPropagation();
+		// Hide all hint
+		for (let hint of infoHints) {
+			hint.classList.add('none');
+		}
+		// Show carrent hint
 		this.parentNode.querySelector('.info-hint').classList.toggle('none');
 	});
 }
@@ -96,9 +101,9 @@ const mobileNavCloseBtn = document.querySelector('#close-mobile-nav-btn');
 const mobileNav = document.querySelector('#mobile-nav');
 
 mobileNavOpenBtn.onclick = function () {
-	mobileNav.classList.add("mobile-nav-wrapper--open");
+	mobileNav.classList.add('mobile-nav-wrapper--open');
 };
 
 mobileNavCloseBtn.onclick = function () {
-	mobileNav.classList.remove("mobile-nav-wrapper--open");
+	mobileNav.classList.remove('mobile-nav-wrapper--open');
 };

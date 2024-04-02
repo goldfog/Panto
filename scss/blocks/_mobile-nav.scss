@@ -5,9 +5,19 @@
 	top: 0;
 	bottom: 0;
 	width: 320px;
+	z-index: 9;
 	background-color: var(--footer-bg);
 	padding: 30px 30px;
 	color: var(--footer-texColor);
+
+	a {
+		color: var(--footer-texColor);
+		transition: color 0.2s ease-in;
+
+		&:hover {
+			color: #fff;
+		}
+	}
 
 	&--open {
 		display: block;
