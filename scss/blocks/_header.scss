@@ -19,10 +19,21 @@
 			background-image: $image;
 		}
 	}
+
+	@include mobile() {
+		padding-top: 20px;
+		padding-bottom: 240px;
+		background-position: center;
+		aspect-ratio: unset;
+	}
 }
 
 .header__nav {
 	margin-bottom: clamp(20px, 0.875rem + 5vw, 86px);
+}
+
+.header__content {
+	text-align: center;
 }
 
 .header__title {
@@ -35,14 +46,10 @@
 	margin-bottom: 14px;
 }
 
-.header__content {
-	text-align: center;
-}
-
 .header__content p {
 	max-width: 606px;
 	margin: 0 auto;
-	font-size: clamp(16px, 0.821rem + 4.64vw, 24px);
+	font-size: clamp(16px, 0.821rem + 0.71vw, 24px);
 	line-height: 160%;
 	opacity: 0.8;
 }

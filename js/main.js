@@ -37,25 +37,29 @@ const swiper = new Swiper('.swiper', {
 	// freeMode: true,
 	// loop: true,
 
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		},
+		600: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		920: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+		1230: {
+			slidesPerView: 4,
+			spaceBetween: 42,
+		}
+	},
+
 	navigation: {
 		nextEl: '#sliderNext',
 		prevEl: '#sliderPrev',
 	},
-
-	// breakpoints: {
-	// 	640: {
-	// 		slidesPerView: 2,
-	// 		spaceBetween: 20,
-	// 	},
-	// 	768: {
-	// 		slidesPerView: 4,
-	// 		spaceBetween: 40,
-	// 	},
-	// 	1024: {
-	// 		slidesPerView: 5,
-	// 		spaceBetween: 50,
-	// 	},
-	// },
 });
 
 // Tabs
